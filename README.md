@@ -1,0 +1,2 @@
+# SwiftFoundationExample
+Example of SwiftFoundation
