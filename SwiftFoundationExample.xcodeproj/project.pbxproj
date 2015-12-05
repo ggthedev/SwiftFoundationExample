@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E7DFA2C1C13AE330000E254 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7DFA2B1C13AE330000E254 /* main.swift */; };
+		6E16976E1C13B1A500264BED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16976D1C13B1A500264BED /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E16976D1C13B1A500264BED /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = SOURCE_ROOT; };
 		6E7DFA281C13AE330000E254 /* SwiftFoundationExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftFoundationExample; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E7DFA2B1C13AE330000E254 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		6E7DFA2A1C13AE330000E254 /* SwiftFoundationExample */ = {
 			isa = PBXGroup;
 			children = (
-				6E7DFA2B1C13AE330000E254 /* main.swift */,
+				6E16976D1C13B1A500264BED /* main.swift */,
 			);
 			path = SwiftFoundationExample;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7DFA2C1C13AE330000E254 /* main.swift in Sources */,
+				6E16976E1C13B1A500264BED /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,15 +209,20 @@
 		6E7DFA301C13AE330000E254 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../Carthage/Build/Mac;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6E7DFA311C13AE330000E254 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../Carthage/Build/Mac;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -241,6 +246,7 @@
 				6E7DFA311C13AE330000E254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
