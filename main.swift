@@ -30,3 +30,13 @@ let jsonValue = JSON.Value.Object(jsonObject)
 let jsonString = try! jsonValue.toString()
 
 print("Export JSON: " + jsonString)
+
+let regexString = "Welcome"
+
+let regex = try! RegularExpression(regexString)
+
+let string = "Welcome to RegExr v2.0 by gskinner.com!"
+
+let match = regex.match(string)!
+
+print("Found \"\(regexString)\" at \(match) in \"\(string)\"")

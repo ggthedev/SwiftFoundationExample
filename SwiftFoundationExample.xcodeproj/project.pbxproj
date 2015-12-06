@@ -10,6 +10,44 @@
 		6E16976E1C13B1A500264BED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16976D1C13B1A500264BED /* main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6E2F71B91C14C2DF00E81D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2F71B11C14C2DF00E81D56 /* SwiftFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E30BA0D1B40F543009B1B49;
+			remoteInfo = "SwiftFoundation OS X";
+		};
+		6E2F71BB1C14C2DF00E81D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2F71B11C14C2DF00E81D56 /* SwiftFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E30BA171B40F543009B1B49;
+			remoteInfo = "SwiftFoundationTests OS X";
+		};
+		6E2F71BD1C14C2DF00E81D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2F71B11C14C2DF00E81D56 /* SwiftFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1AE78F6C1B96774100CDEF17;
+			remoteInfo = "SwiftFoundation iOS";
+		};
+		6E2F71BF1C14C2DF00E81D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2F71B11C14C2DF00E81D56 /* SwiftFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E08F8571BBE7B8800548B1E;
+			remoteInfo = "SwiftFoundationTests iOS";
+		};
+		6E2F71C11C14C2DF00E81D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2F71B11C14C2DF00E81D56 /* SwiftFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1AE78FC41B96774300CDEF17;
+			remoteInfo = "SwiftFoundation WatchOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		6E7DFA261C13AE330000E254 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		6E16976D1C13B1A500264BED /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = SOURCE_ROOT; };
+		6E2F71B11C14C2DF00E81D56 /* SwiftFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftFoundation.xcodeproj; path = Carthage/Checkouts/SwiftFoundation/SwiftFoundation/SwiftFoundation.xcodeproj; sourceTree = "<group>"; };
 		6E7DFA281C13AE330000E254 /* SwiftFoundationExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftFoundationExample; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -38,9 +77,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E2F71B21C14C2DF00E81D56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E2F71BA1C14C2DF00E81D56 /* SwiftFoundation.framework */,
+				6E2F71BC1C14C2DF00E81D56 /* SwiftFoundationTests.xctest */,
+				6E2F71BE1C14C2DF00E81D56 /* SwiftFoundation.framework */,
+				6E2F71C01C14C2DF00E81D56 /* SwiftFoundationTests.xctest */,
+				6E2F71C21C14C2DF00E81D56 /* SwiftFoundation.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6E7DFA1F1C13AE330000E254 = {
 			isa = PBXGroup;
 			children = (
+				6E2F71B11C14C2DF00E81D56 /* SwiftFoundation.xcodeproj */,
 				6E7DFA2A1C13AE330000E254 /* SwiftFoundationExample */,
 				6E7DFA291C13AE330000E254 /* Products */,
 			);
@@ -107,12 +159,56 @@
 			mainGroup = 6E7DFA1F1C13AE330000E254;
 			productRefGroup = 6E7DFA291C13AE330000E254 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6E2F71B21C14C2DF00E81D56 /* Products */;
+					ProjectRef = 6E2F71B11C14C2DF00E81D56 /* SwiftFoundation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6E7DFA271C13AE330000E254 /* SwiftFoundationExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6E2F71BA1C14C2DF00E81D56 /* SwiftFoundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftFoundation.framework;
+			remoteRef = 6E2F71B91C14C2DF00E81D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E2F71BC1C14C2DF00E81D56 /* SwiftFoundationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftFoundationTests.xctest;
+			remoteRef = 6E2F71BB1C14C2DF00E81D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E2F71BE1C14C2DF00E81D56 /* SwiftFoundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftFoundation.framework;
+			remoteRef = 6E2F71BD1C14C2DF00E81D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E2F71C01C14C2DF00E81D56 /* SwiftFoundationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftFoundationTests.xctest;
+			remoteRef = 6E2F71BF1C14C2DF00E81D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E2F71C21C14C2DF00E81D56 /* SwiftFoundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftFoundation.framework;
+			remoteRef = 6E2F71C11C14C2DF00E81D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E7DFA241C13AE330000E254 /* Sources */ = {
@@ -211,7 +307,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../Carthage/Build/Mac;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -222,7 +318,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../Carthage/Build/Mac;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
